@@ -21,6 +21,14 @@
 
         <p class="solid">The border</p>
 
+        <div class="row">
+            <div class="column">
+                <h3>Column</h3>
+                <p>This is a test column i do not know if it
+                    will work but if not it was worth a try.
+                </p>
+        </div>
+
         <style>
             .topnav {
                 overflow: hidden;
@@ -59,6 +67,24 @@
             p.solid{border-style: solid}
 
             h2{color: purple;}
+
+            .column{
+                float: left;
+                width: 33.33%;
+                padding: 15px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            @media screen and (max-width:600px){
+                .column{
+                    width: 100%;
+                }
+            }
         </style>
     </body>
 </html>
