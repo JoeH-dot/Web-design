@@ -3,13 +3,108 @@
     <head>
         <meta charset="utf-8"/>
         <title>My Page</title>
+        <style>
+          .navbar{
+            overflow: hidden;
+            background-color: rgb(29, 182, 88);
+            font-family: Impact;
+          }
+  
+          .nabar a{
+            float: left;
+            display:block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+  
+          .dropdown{
+            float: left;
+            overflow: hidden;
+          }
+  
+          .dropdown .dropbtn{
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+          }
+  
+          .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: black;
+          }
+  
+          .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+  
+          .dropdown-content a{
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+  
+          .dropdown-content a:hover{
+            background-color: white;
+          }
+  
+          .dropdown:hover .dropdown-content{
+            display: block
+          }
+  
+          div#myDiv2{
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+          }
+  
+          div#myDiv1{
+            -ms-transform: matrix(1,-0.3,0,1,0,0);
+            transform: matrix(1,0.3,0,1,0,0);
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+          }
+  
+          div#myDiv3{
+            width: 100px;
+            height: 100px;
+            transition: width 3s, height 3s, transform 3s;
+            background-image: url('https://i.redd.it/tegfaxl0ajq51.png');
+            background-size: contain;
+          }
+  
+          div#myDiv3:hover{
+            width: 300px;
+            height: 300px;
+            transform: rotate(360deg);
+          }
+      </style>
     </head>
     <body>
         <h1>Coming Soon</h1>
 
         <div class="navbar">
+           
             <a href="CSS.html">CSS Page</a>
+          
             <a href="pageStructure.html">Page Structure</a>
+            
             <div class="dropdown">
               <button class="dropbtn">Dropdown
                 <i class="fa fa-catet-down"></i>
@@ -37,96 +132,5 @@
 
 
     </body>
-    <style>
-        .navbar{
-          overflow: hidden;
-          background-color: rgb(29, 182, 88);
-          font-family: Impact;
-        }
-
-        .nabar a{
-          float: left;
-          display:block;
-          color: black;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-
-        .dropdown{
-          float: left;
-          overflow: hidden;
-        }
-
-        .dropdown .dropbtn{
-          font-size: 16px;
-          border: none;
-          outline: none;
-          color: white;
-          padding: 14px 16px;
-          background-color: inherit;
-          font-family: inherit;
-          margin: 0;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn{
-          background-color: black;
-        }
-
-        .dropdown-content{
-          display: none;
-          position: absolute;
-          background-color: white;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-
-        .dropdown-content a{
-          float: none;
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-        }
-
-        .dropdown-content a:hover{
-          background-color: white;
-        }
-
-        .dropdown:hover .dropdown-content{
-          display: block
-        }
-
-        div#myDiv2{
-          width: 300px;
-          height: 100px;
-          background-color: yellow;
-          border: 1px solid black;
-        }
-
-        div#myDiv1{
-          -ms-transform: matrix(1,-0.3,0,1,0,0);
-          transform: matrix(1,0.3,0,1,0,0);
-          width: 300px;
-          height: 100px;
-          background-color: yellow;
-          border: 1px solid black;
-        }
-
-        div#myDiv3{
-          width: 100px;
-          height: 100px;
-          transition: width 3s, height 3s, transform 3s;
-          background-image: url('https://i.redd.it/tegfaxl0ajq51.png');
-          background-size: contain;
-        }
-
-        div#myDiv3:hover{
-          width: 300px;
-          height: 300px;
-          transform: rotate(360deg);
-        }
-    </style>
+    
 </html>
