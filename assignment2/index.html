@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "en">
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <title>Main Page</title>
+    </head>
+    <body>
+        <!---Header-->
+        <div class="header">
+                <h1>Main Page</h1>
+        </div>
+        
+        <!--Navigation Bar-->
+        <div class="topnav">
+            <a href="#">Home Page</a>
+            <a href="#">Page 2</a>
+            <a href="#">Page 3</a>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+                <h3>Inline CSS</h3>
+                <p>Information goes here</p>
+            </div>
+            <div class="column">
+                <h3>Embedded CSS</h3>
+                <p>Information goes here</p>
+            </div>
+            <div class="column">
+                <h3>External CSS</h3>
+                <p>Information goes here</p>
+            </div>
+        </div>
+        
+        <style>
+            .topnav {
+                overflow: hidden;
+                background-color: red;
+            }
+
+            .topnav a{
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .topnav a:hover{
+                background-color: red;
+                color: white;
+            }
+
+            .header{
+                background-color: black;
+                padding: 9px;
+                text-align: center;
+            }
+
+            h1{
+                color: red;
+            }
+
+            h1:hover{
+                color: white;
+            }
+
+            body{
+                margin: 0;
+            }
+
+            .column{
+                float: left;
+                width: 33;
+                padding: 32px;
+            }
+            .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width: 600px){
+                .column{
+                    width: 100%;
+                }
+            }
+        </style>
+    </body>
+</html>
