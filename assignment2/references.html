@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <title>References</title>
+    </head>
+    <body>
+        <div class="header">
+                <h1>References</h1>
+        </div>
+
+        <div class="topnav">
+            <a href="index.html">Home Page</a>
+            <a href="box.html">The Box Model</a>
+            <a href="references.html">References</a>
+        </div>
+
+        <h2>References List</h2>
+        
+        <ul>
+            <li>https://www.w3schools.com/css/css_boxmodel.asp</li>
+            <li>https://medium.com/@dasjideepak/css-box-model-55f96fb67be9</li>
+            <li>http://www.boogiejack.com/CSS_2.html</li>
+            <li>https://www.hostinger.co.uk/tutorials/difference-between-inline-external-and-internal-css#Inline-CSS</li>
+            <li>https://skillcrush.com/blog/how-to-edit-inline-css-for-your-blog/</li>
+            <li>https://www.codeproject.com/Articles/754214/Beginners-Guide-to-HTML-CSS-Styling-Your-First-W</li>
+        </ul>
+
+        <p>Hover your mouse over the image below</p>
+
+        <div id="myDiv3">
+        </div>
+
+        <style>
+            .topnav {
+                overflow: hidden;
+                background-color: red;
+            }
+
+            .topnav a{
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .topnav a:hover{
+                background-color: red;
+                color: white;
+            }
+
+            .header{
+                background-color: black;
+                padding: 9px;
+                text-align: center;
+            }
+
+            h1{
+                color: red;
+            }
+
+            h1:hover{
+                color: white;
+            }
+
+            body{
+                margin: 0;
+            }
+
+            li{
+                font-size: 17px;
+            }
+
+            h2{
+                font-size: 28px;
+                color: deepskyblue;
+            }
+
+            div#myDiv3{
+                width: 100px;
+                height: 100px;
+                transition: width 3s, height 3s, transform 3s;
+                background-image: url('https://finalweapon.net/wp-content/uploads/2020/03/Bill-Gates.jpg');
+                background-size: contain;
+            }
+  
+          div#myDiv3:hover{
+                width: 300px;
+                height: 300px;
+                transform: rotate(360deg);
+            }
+
+            p{
+                font-size: 16px;
+                padding: 5px;
+            }
+        </style>
+    </body>
+</html>
