@@ -23,6 +23,16 @@
             <div class="column">
                 <h3>Inline CSS</h3>
                 <p>Inline CSS is one of the ways you can incorporate CSS into your html files. Inline CSS allows you to edit the properties of a single element by typing the CSS code in the html tag of the element you want to edit which allows you to quickly make changes to the style of your website.</p>
+                <p></p>
+                <p>The image below is an example of inline CSS implemented in html.</p>
+                <div class="dropdown">
+                    <img src="http://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2015/08/Purple-Header-Screenshot.png" alt="line" width="654" height="236">
+                    <div class="dropdown-content">
+                        <img src="http://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2015/08/Purple-Header-Screenshot.png" alt="inline" width="803" height="306">
+                        <div class="desc">Image source: https://skillcrush.com/blog/how-to-edit-inline-css-for-your-blog/</div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="column">
@@ -32,7 +42,7 @@
 
             <div class="column">
                 <h3>External CSS</h3>
-                <p>Information goes here lllllllllllllllllllll</p>
+                <p>External CSS allows you to incorporate CSS into your html files with the use of an external CSS file which is linked to the html file you want to customise.</p>
             </div>
 
         </div>
@@ -88,6 +98,29 @@
                 .column{
                     width: 100%;
                 }
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+
+            .desc{
+                padding: 15px;
+                text-align: center;
             }
         </style>
     </body>
