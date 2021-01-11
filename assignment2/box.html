@@ -10,13 +10,30 @@
             <h1>The Box Model</h1>
         </div>
 
+        <div class="topnav">
+            <a href="index.html">Home Page</a>
+            <a href="box.html">The Box Model</a>
+            <a href="#">References</a>
+        </div>
 
+        <h2>What is the box model?</h2>
+
+        <div class="dropdown">
+            <img src="https://miro.medium.com/max/2400/1*CSL2YLWiUV_VlGCJnfygEA.png" alt="The Box Model" width="491.3" height="264.6">
+            <div class="dropdown-content">
+                <img src="https://miro.medium.com/max/2400/1*CSL2YLWiUV_VlGCJnfygEA.png" alt="The Box Model" width="737" height="397">
+                <div class="desc">Image Source: https://medium.com/@dasjideepak/css-box-model-55f96fb67be9</div>
+            </div>
+        </div>
+
+        <p>The Box Model is a design tool used by CSS that is used to customise the layout of html elements. Every html element has a "box" which is split up into different segments. These segments are the Content, Padding, Border and Margin. The Content segment of the box model contains the actual content stored in the element such as videos, images and text. The Padding segment of the box model which is used to create a blank area around the content. The Border is an area around the padding and content segments which allows you to add a border to your elements. The Margin segment wraps around the border and is used to distance different elements from each other.</p>
         <style>
             .header{
                 background-color: black;
                 padding: 9px;
                 text-align: center;
             }
+
             h1{
                 color: red;
             }
@@ -24,8 +41,60 @@
             h1:hover{
                 color: white;
             }
+
             body{
                 margin: 0;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: red;
+            }
+
+            .topnav a{
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .topnav a:hover{
+                background-color: red;
+                color: white;
+            }
+
+            h2{
+                font-size: 32px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            p{
+                font-size: 19px;
+                width: 600px;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+
+            .desc{
+                padding: 15px;
+                text-align: center;
             }
         </style>
     </body>
