@@ -97,8 +97,30 @@
             <p></p>
             <p2>Element selectors are used to select all of the parts of a website which have a specific element. As an example if you use the element selector "h" this will select all header elements in the html file</p2>
             <p></p>
-            <p2>Id selectors are used to select elements with a specific id attribute. An example of this would be "#test" which will select all elements with the id "test"</p2>
+            <p2>Id selectors are used to select elements with a specific id attribute. An example of this would be "#test" which will select all elements with the id attribute "test".</p2>
         </div>
+
+        <p></p>
+        
+        <h2>Animations & Transitions</h2>
+        <div class="column">
+            <div class="squareani"></div>
+            <p class="ani">This is a linear animation which makes use of five keyframes which control the colour as well as the position of the square. In the image below you can see the CSS code I used to create this animation.</p>
+            <img src="https://i.imgur.com/44bMaAR.png" alt="squareCSS" width="475" height="394">
+        </div>
+
+        <div class="column">
+            <div class="rectangleani"></div>
+            <p>This is an animation which uses ease timing and two keyframes to move the rectangle from one position to another. In the image below you can see the CSS code I used to make this animation.</p>
+            <img src="https://i.imgur.com/SpZ3Icn.png" alt="rectangleCSS" width="337" height="268">
+        </div>
+
+        <div class="column">
+            <div id="myDiv3"></div>
+            <p>This is an image that has a transformation which makes use of a transition. When hovering over the image it will rotate with a transition of 3 seconds. In the image below you can see the CSS code I used to create the transitioning image.</p>
+            <img src="https://i.imgur.com/PR03KoM.png" alt="transitionCSS" width="612" height="191">
+        </div>
+
 
         <style>
             .topnav {
@@ -189,6 +211,60 @@
                 font-size: 19px;
                 width: 600px;
             }
+
+            .squareani{
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                position: relative;
+                animation-name: square;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            @keyframes square{
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:100px; top:0px;}
+                50%  {background-color:blue; left:100px; top:100px;}
+                75%  {background-color:green; left:0px; top:100px;}
+                100% {background-color:red; left:0px; top:0px;}
+            }
+
+            .rectangleani{
+                width: 50px;
+                height: 25px;
+                background-color: green;
+                position: relative;
+                animation: rectangle 2.5s infinite;
+                animation-timing-function: ease;
+            }
+
+            @keyframes rectangle{
+                from{left: 0px;}
+                to{left: 150px;}
+            }
+
+            div#myDiv3{
+                width: 100px;
+                height: 100px;
+                transition: width 3s, height 3s, transform 3s;
+                background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/Macintosh_classic.jpg');
+                background-size: contain;
+            }
+  
+            div#myDiv3:hover{
+                width: 300px;
+                height: 300px;
+                transform: rotate(360deg);
+            }
+
+            .ani{
+                padding-top: 85px;
+            }
+
         </style>
     </body>
 </html>
