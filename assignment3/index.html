@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang = "en">
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <title>Main Page</title>
+    </head>
+    <body>
+        <!---Header-->
+        <div class="header">
+                <h1>Assignment Two</h1>
+        </div>
+        
+        <!--Navigation Bar-->
+        <div class="topnav">
+            <a href="index.html">Home Page</a>
+            <a href="box.html">Test</a>
+            <a href="references.html">Test</a>
+        </div>
+
+
+
+        <style>
+            .topnav {
+                overflow: hidden;
+                background-color: red;
+            }
+
+            .topnav a{
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .topnav a:hover{
+                background-color: red;
+                color: white;
+            }
+
+            .header{
+                background-color: black;
+                padding: 9px;
+                text-align: center;
+            }
+
+            h1{
+                color: red;
+            }
+
+            h1:hover{
+                color: white;
+            }
+
+            body{
+                margin: 0;
+            }
+
+            .column{
+                float: left;
+                width: 33%;
+            }
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width: 600px){
+                .column{
+                    width: 100%;
+                }
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+
+            .desc{
+                padding: 15px;
+                text-align: center;
+            }
+
+            h2{
+                font-size: 28px;
+                padding: 12px;
+            }
+
+            h3{
+                font-size: 22px;
+            }
+
+            .cssinfo{
+                font-size: 19px;
+                width: 600px;
+            }
+
+            .squareani{
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                position: relative;
+                animation-name: square;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            @keyframes square{
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:100px; top:0px;}
+                50%  {background-color:blue; left:100px; top:100px;}
+                75%  {background-color:green; left:0px; top:100px;}
+                100% {background-color:red; left:0px; top:0px;}
+            }
+
+            .rectangleani{
+                width: 50px;
+                height: 25px;
+                background-color: green;
+                position: relative;
+                animation: rectangle 2.5s infinite;
+                animation-timing-function: ease;
+            }
+
+            @keyframes rectangle{
+                from{left: 0px;}
+                to{left: 150px;}
+            }
+
+            div#myDiv3{
+                width: 100px;
+                height: 100px;
+                transition: width 3s, height 3s, transform 3s;
+                background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/Macintosh_classic.jpg');
+                background-size: contain;
+            }
+  
+            div#myDiv3:hover{
+                width: 300px;
+                height: 300px;
+                transform: rotate(360deg);
+            }
+
+            .ani{
+                padding-top: 85px;
+            }
+
+        </style>
+    </body>
+</html>
