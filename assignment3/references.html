@@ -3,22 +3,13 @@
 <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <meta charset="utf-8">
-        <title>Javascript Examples</title>
+        <title>References</title>
 
-        <script>
-            function redirect(){
-                window.location.href = "https://google.co.uk";
-            }
-
-            function browserDetection(){
-                document.getElementById("demo").innerHTML = navigator.userAgent;
-            }
-        </script>
     </head>
     <body>
         <!---Header-->
         <div class="header">
-                <h1>Javascript Examples</h1>
+                <h1>References</h1>
         </div>
         
         <!--Navigation Bar-->
@@ -30,39 +21,15 @@
             <a href="references.html">References</a>
         </div>
 
-        <h2>Alert, Confirm and Prompt boxes</h2>
-        <button onclick='window.alert("This is an example of an alert box");'>Alert Box</button>
-        <button onclick='window.confirm("This is an example of a confirm box");'>Confirm Box</button>
-        <button onclick='window.prompt("This is an example of a prompt box. Enter any text");'>Prompt Box</button>
-        <div class="cssinfo">
-            <p>
-                These popup boxes are very useful in aiding the functionality of the website because they can be used for multiple purposes.
-                As an example the alert box could be used to signify if there has been an error for example if the user has incorrectly inputted
-                data such as a username and password. Alert boxes could also be used to display information such as the results of a calculation to the user.
-                Confirm boxes can be used to make sure that the user wants to perform an action on the website. Prompt boxes could be used as an alternative way to receive user
-                input.
-            </p>
-        </div>
-
-        <h2>User Redirection</h2>
-        <button id="redirect" onclick="redirect()">Click here to be redirected to google</button>
-        <div class="cssinfo">
-            <p>
-                User redirection can be very useful if you are planning on moving to a new domain because normally a user may try to use your old domain name and would be met with an error.
-                But you could have it so that the old domain will redirect the user to the new domain. User redirection can also be useful if you want to redirect the user to sources of information.
-            </p>
-        </div>
-
-        <h2>Browser Detection</h2>
-        <button onclick="browserDetection()">Click To Detect browser</button>
-        <div class="cssinfo">
-            <p id="demo"> </p>
-            <p>
-                Browser detection can be very important in websites as you can use it to make sure that the users receives a correct version of the website for their device or browser.
-                For example when if the user is on a mobile device you can use browser detection to discover that they are using a mobile browser and then send them the mobile version
-                of the website.
-            </p>
-        </div>
+        <h2>References List</h2>
+        
+        <ul>
+            <li>https://www.w3schools.com/js/js_popup.asp</li>
+            <li>https://levelup.gitconnected.com/javascript-vulnerabilities-e5391a746c90</li>
+            <li>https://developer.mozilla.org/en-US/docs/Glossary/Method</li>
+            <li>https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent</li>
+            <li>https://www.csoonline.com/article/3295877/what-is-malware-viruses-worms-trojans-and-beyond.html</li>
+        </ul>
         <style>
             .topnav {
                 overflow: hidden;
@@ -142,6 +109,7 @@
             h2{
                 font-size: 28px;
                 padding: 12px;
+                color: deepskyblue;
             }
 
             h3{
