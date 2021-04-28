@@ -17,19 +17,19 @@
             p {font-size: 16px;}
             .margin {margin-bottom: 45px;}
             .bg-1 { 
-              background-color: #1abc9c; /* Green */
+              background-color: #ff0000; 
               color: #ffffff;
             }
             .bg-2 { 
-              background-color: #474e5d; /* Dark Blue */
+              background-color: #474e5d; 
               color: #ffffff;
             }
             .bg-3 { 
-              background-color: #ffffff; /* White */
-              color: #555555;
+              background-color: black; 
+              color: white;
             }
             .bg-4 { 
-              background-color: #2f2f2f; /* Black Gray */
+              background-color: #2f2f2f; 
               color: #fff;
             }
             .container-fluid {
@@ -44,10 +44,20 @@
               margin-bottom: 0;
               font-size: 12px;
               letter-spacing: 5px;
+              background-color: #000000;
             }
+
+            
             .navbar-nav  li a:hover {
-              color: #1abc9c !important;
+              color: red !important;
             }
+            .navbar-default .navbar-nav>li>a {
+              color: white;
+            }
+            .navbar-default .navbar-brand {
+              color: white;
+            }
+
             </style>
         </head>
     <body>
@@ -63,8 +73,8 @@
                     </button>
                     <a class="navbar-brand" href="#">Home</a>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
+                <div class="collapse navbar-collapse bg-3" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right" >
                         <li><a href="#">Button 1</a></li>
                         <li><a href="#">Button 2</a></li>
                         <li><a href="#">Button 3</a></li>
@@ -80,12 +90,34 @@
             <h3>Bottom Text</h3>
         </div>
 
-        <div class="container-fluid bg-2 text-center">
+        <div class="container-fluid bg-3 text-center">
             <h3 class="margin">Welcome!</h3>
             <p>Takamoto Katsuta is a Japanese rally driver. He currently rallies for the Toyota Gazoo Racing WRT in the World Rally Championship. He rose to prominence after taking a surprise victory in the WRC-2 class at the 2018 Rally Sweden.</p>
             <a href="https://google.co.uk" class="btn btn-default btn-lg">
                 <span class="glyphicon glyphicon-search"></span> Google
             </a>
+        </div>
+
+        <div class="container-fluid bg-3 text-center">
+          <h3>Toyota Gazoo Racing WRT Drivers</h3>
+          <div class="row">
+            <div class="col-sm-4">
+              <p>Elfyn Evans</p>
+              <img src="https://pbs.twimg.com/profile_images/1351094447048712193/5QPdIWVn.jpg" class="img-responsive" style="width: 100%" alt="image">
+            </div>
+            <div class="col-sm-4">
+              <p>Kalle Rovanperä</p>
+              <img src="https://cdn-1.motorsport.com/images/mgl/0qXWo1w6/s8/kalle-rovanpera-toyota-gazoo-r-1.jpg" class="img-responsive" style="width: 100%" alt="image">
+            </div>
+            <div class="col-sm-4">
+              <p>Takamoto Katsuta</p>
+              <img src="https://pbs.twimg.com/profile_images/1354064265158795264/eSpHD3x3_400x400.jpg" class="img-responsive" style="width: 100%" alt="image">
+            </div>
+            <div class="col-sm-4">
+              <p>Sébastien Ogier</p>
+              <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/2/16/q122zzy4midgix8kkj9m/sebastien-ogier-portrait-2020" class="img-responsive" style="width: 100%" alt="image">
+            </div>
+          </div>
         </div>
     </body>
 </html>
