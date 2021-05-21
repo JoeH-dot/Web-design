@@ -1,13 +1,133 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <meta charset="utf-8"/>
-        <title>My Page</title>
-    </head>
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body {
+              font: 20px Montserrat, sans-serif;
+              line-height: 1.8;
+              color: #f5f6f7;
+              background-color: black;
+            }
+            p {font-size: 16px;}
+            .margin {margin-bottom: 45px;}
+            .bg-1 { 
+              background-color: #ff0000; 
+              color: #ffffff;
+            }
+            .bg-2 { 
+              background-color: #474e5d; 
+              color: #ffffff;
+            }
+            .bg-3 { 
+              background-color: black; 
+              color: white;
+            }
+            .bg-4 { 
+              background-color: #2f2f2f; 
+              color: #fff;
+            }
+            .container-fluid {
+              padding-top: 70px;
+              padding-bottom: 70px;
+            }
+            .navbar {
+              padding-top: 15px;
+              padding-bottom: 15px;
+              border: 0;
+              border-radius: 0;
+              margin-bottom: 0;
+              font-size: 12px;
+              letter-spacing: 5px;
+              background-color: #000000;
+            }
+
+            
+            .navbar-nav  li a:hover {
+              color: red !important;
+            }
+            .navbar-default .navbar-nav>li>a {
+              color: white;
+            }
+            .navbar-default .navbar-brand {
+              color: white;
+            }
+            #backimage{
+              background-image: url("https://i.ytimg.com/vi/pkWbSThLU4g/maxresdefault.jpg");
+              background-size: cover;
+              padding-top: 320px;
+              padding-bottom: 320px;
+              color: white;
+            }
+
+            .jumbotron{
+              background-color: black;
+            }
+
+            #line{
+              font-size: 32px;
+            }
+            </style>
+        </head>
     <body>
-        <h1>Hello World</h1>
-        <a href="pageStructure.html">Link!</a>
-        <p></p>
-        <a href="CSS.html">Link 2!</a>
+
+        <!---NavBar-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                      <img src="logo2.png" width="110" height="48.6" alt="logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse bg-3" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="login.html">Member's Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--The Header-->
+        <div class="container-fluid bg-1 text-center">
+            <h3 class="margin">Toyota Gazoo Racing World Rally Team</h3>
+            <img src="https://global.toyota/pages/news/images/2020/01/10/1300/001.jpg" class="img-responsive img-circle margin" style="display: inline;" alt="Picture" width="350" height="350">
+        </div>
+
+        <div class="container-fluid bg-3 text-center" id="backimage">
+            <h3 class="margin">Welcome!</h3>
+            <p> </p>
+            <a href="https://twitter.com/TGR_WRC" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-retweet"></span> Our Twitter
+            </a>
+        </div>
+
+        <div class="jumbotron">
+          <h1 id="line">The 2021 Line up</h1>
+          <p style="font-size: 16px;">
+            The TOYOTA GAZOO Racing World Rally Team is preparing to target further FIA World Rally Championship success in 2021. Sébastien Ogier, who won his seventh drivers’ title in his first season with the team in 2020, has extended his career to spend one more year driving the Toyota Yaris WRC. He will once again line up alongside Elfyn Evans, the 2020 championship runner-up, and exciting young talent Kalle Rovanperä.
+            Completing this squad of expert drivers is a new Team Principal: Jari-Matti Latvala. The most experienced driver in the history of the WRC, Latvala has been appointed to succeed Tommi Mäkinen, who takes up the role of Motorsport Advisor to Toyota from January 2021.
+          </p>
+        </div>
+
+        <footer class="container-fluid bg-4 text-center">
+          <p>TOYOTA MOTOR CORPORATION.</p>
+          <a href="https://global.toyota/en/" target="_blank">
+            <img src="https://toyotagazooracing.com/pages/contents/en/tgr-asset/image/logos/logo_toyota.png" alt="Toyota">
+          </a>
+        </footer>
     </body>
 </html>
